@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Justin Xiao</title>
+<script src="https://use.fontawesome.com/e83ef8e590.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+    ::selection {
+    background: #ADEEE3; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+    background: #ADEEE3; /* Gecko Browsers */
+    }
+    a{
+        text-align: center;
+        font-family:Open Sans;
+        font-weight:100;
+        font-size:2em;
+        color:#3A3838;
+        -webkit-transition: color 0.5s;
+        transition:color 0.5s ;
+        text-decoration: none;
+    }
+    p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+    .flex-div{
+
+      display: flex;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .body {
+      margin: auto;
+      width: 70%;
+      height: 80%;
+    }
+
+    .head {
+      margin-top: 3%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      margin-bottom: 2%;
+      padding-bottom: 1%;
+      border-bottom: 2px solid #3A3838;
+    }
+    .contact{
+      margin-top: 3%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      margin-bottom: 2%;
+      padding-bottom: 1%;
+    }
+
+
+    .head-img {
+    padding: 5px; /* Some padding */
+    width: 45%; /* Set a small width */
+    /* margin-top: 1.5%; */
+    }
+
+    img{
+      width: 100%; /* Set a small width */
+    }
+    a:hover {
+        color:#93E1D8;
+    }
+
+    i:hover{
+      color:#93E1D8;
+    }
+
+    .about_text{
+      text-align: justify;
+      font-family:Open Sans;
+      font-weight:100;
+      font-size: .9em;
+      color:#3A3838;
+      width: 55%;
+      height:80%;
+      /* margin-top: 1.5%; */
+      margin-left:5%;
+      /* margin-right: auto; */
+      margin-bottom: 5%;
+      padding-bottom: 5%;
+
+    }
+
+    .url{
+      font-family:Open Sans;
+      font-weight:100;
+      font-size:1em;
+      color:#2ba898;
+      -webkit-transition: color 0.5s;
+      transition:color 0.5s ;
+    }
+
+    .fa .fa-linkedin-square{
+      color:#3A3838;
+      -webkit-transition: color 0.5s;
+      transition:color 0.5s ;
+    }
+    .fa-linkedin-square:hover{
+      color:#93E1D8;
+    }
+    .refs{
+      font-size: 1.5em;
+    }
+
+    #name{
+      font-size:2em;
+      margin-right: 31%;
+    }
+    #about{
+      font-size:1.1em;
+      margin-right: 3%;
+    }
+    #projects{
+      font-size:1.1em;
+      margin-right: 3%;
+    }
+    #music{
+      font-size:1.1em;
+      margin-right: 3%;
+    }
+    #resume{
+      font-size:1.1em;
+      margin-right: 0%;
+    }
+
+@media screen and (max-width: 950px){
+  .flex-div{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .head-img {
+  /* padding: 5px; /* Some padding */
+  margin:auto;
+  width: 70%; /* Set a small width */
+  display: block;
+  /* margin-top: 1.5%; */
+  }
+  .about_text{
+    text-align: justify;
+    font-family:Open Sans;
+    font-weight:100;
+    color:#3A3838;
+    width: 100%;
+    height:80%;
+    /* margin-top: 1.5%; */
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+
+  }
+}
+#footer {
+	width: 100%;
+}
+
+.footer-container {
+	width: 960px;
+	margin: 0px auto;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.copyright {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 0.9;
+	letter-spacing: 0.0625em;
+	color: #605d5d;
+}
+
+.footer-icon {
+	margin-right: 6px;
+	margin-left: 6px;
+}
+</style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="head">
+      <a class="color_change" id="name" href="/index.html">
+        Justin Xiao
+      </a>
+      <a class="color_change" id="about" href="/index.html">
+        About
+      </a>
+      <a class="color_change" id="projects" href="/projects.html">
+        Projects
+      </a>
+      <a class="color_change" id="music" href="#">
+        Music
+      </a>
+      <a class="color_change" id="resume" href='templates/resume.pdf'>
+        Resume
+      </a>
+    </div>
+    <div class='flex-div'>
+    <div class = 'head-img'><img src="static/headshot.jpeg" title="headshot" class="img"></div>
+    <div class="about_text">
+      <p>Hi! My name is Justin. I graduated from MIT in June 2017 with a Bachelors in Physics and Electrical Engineering, and recently graduated with an M. Eng in Electrical Engineering and Computer Science from MIT in June 2018. For my thesis I performed a technoeconomic analysis of exotic thin-film solar cells with application to powering telecommunications towers.
+      </p>
+      <p>Besides my research, I am focusing on analog and system design, with particular interest in consumer electronics - I want my work to be in the hands of millions of people, improving lives!</p>
+      <p> This summer I will start working in San Francisco as an electrical engineer at <a class="url" href="https://www.samsara.com">Samsara</a>. In the past, I had the pleasure of doing internships in electrical engineering at <a class="url" href="https://apple.com">Apple</a> and <a class="url" href="https://keysight.com">Keysight Technologies</a>. I've also done physics research at the <a class="url" href="http://www.rle.mit.edu/cua_responsive/">MIT-Harvard Center for Ultracold Atoms</a> and <a class="url" href="https://home.cern/">CERN</a>.</p>
+
+      <p>Beyond building cool things and exploring how the universe works, I enjoy making music, taking pictures, and eating ramen :D.</p>
+    </div>
+  </div>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/justin-xiao-25803386/" class="refs"><i class="fa fa-linkedin-square" style="color:#3A3838; transition:color 0.5s; -webkit-transition: color 0.5s;margin-right: 5%" aria-hidden="true"></i></a>
+      <a href="https://github.com/jtxiao" class="refs"><i class="fa fa-github" style="color:#3A3838; transition:color 0.5s; -webkit-transition: color 0.5s;margin-right: 5%" aria-hidden="true"></i></a>
+      <a href="mailto:jtxiao@mit.edu" class="refs"><i class="fa fa-envelope-o" style="color:#3A3838; transition:color 0.5s; -webkit-transition: color 0.5s;margin-right: 5%" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+
+</body>
+
+<section id="footer">
+			<div class="footer-container">
+				<h5 class="copyright">Made with &#127836; by Justin Xiao</h5>
+			</div>
+		</section>
+</html>

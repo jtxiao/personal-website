@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Justin Xiao</title>
+<script src="https://use.fontawesome.com/e83ef8e590.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+    .row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+    display: flex;
+    }
+
+    .col-md-4 {
+    width: 33%;
+    margin: 2%
+    }
+
+    .img-container{
+      position: relative;
+
+      width:100%;
+      padding-bottom: 100%;
+      display: flex;
+      border: 1px solid #ddd; /* Gray border */
+      border-radius: 4px;  /* Rounded border */
+    }
+    .img-container2{
+      position: absolute;
+      /* vertical-align: center; */
+      width:100%;
+      height:100%;
+
+    }
+    img {
+      width: 100%;
+}
+
+/* Add a hover effect (blue shadow) */
+    img:hover {
+        box-shadow: 0 0 6px 3px #93E1D8;
+        -webkit-transition: color 0.5s;
+        transition:color 0.5s ;;
+    }
+
+    ::selection {
+    background: #ADEEE3; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+    background: #ADEEE3; /* Gecko Browsers */
+    }
+    a{
+        text-align: center;
+        font-family:Open Sans;
+        font-weight:100;
+        font-size:2em;
+        color:#3A3838;
+        -webkit-transition: color 0.5s;
+        transition:color 0.5s ;
+        text-decoration: none;
+    }
+    h4{
+      font-size: .7em;
+      text-align: center;
+    }
+    .body {
+      margin: auto;
+      width: 70%;
+      height: 80%;
+    }
+    .head {
+      margin-top: 3%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      margin-bottom: 2%;
+      padding-bottom: 1%;
+      border-bottom: 2px solid #3A3838;
+    }
+    .contact{
+      margin-top: 3%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      margin-bottom: 2%;
+      padding-bottom: 1%;
+    }
+
+    a:hover {
+        color:#93E1D8;
+    }
+
+    i:hover{
+      color:#93E1D8;
+    }
+
+    .about_text{
+      text-align: justify;
+      font-family:Open Sans;
+      font-weight:100;
+      font-size:1em;
+      color:#3A3838;
+      width: 70%;
+      height:80%;
+      margin-top: 1.5%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%;
+      padding-bottom: 5%;
+
+    }
+    .vid{
+      text-align: justify;
+      margin-top: 1.5%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%;
+    }
+
+    .url{
+      font-family:Open Sans;
+      font-weight:100;
+      font-size:1em;
+      color:#086788;
+      -webkit-transition: color 0.5s;
+      transition:color 0.5s ;
+    }
+
+    .fa .fa-linkedin-square{
+      color:#3A3838;
+      -webkit-transition: color 0.5s;
+      transition:color 0.5s ;
+    }
+    .fa-linkedin-square:hover{
+      color:#93E1D8;
+    }
+    .refs{
+      font-size: 1em;
+    }
+    .refs2{
+      font-size: 1.5em;
+    }
+
+    #name{
+      font-size:2em;
+      margin-right: 28%;
+    }
+    #about{
+      font-size:1.2em;
+      margin-right: 3%;
+    }
+    #projects{
+      font-size:1.2em;
+      margin-right: 3%;
+    }
+    #music{
+      font-size:1.2em;
+      margin-right: 3%;
+    }
+    #resume{
+      font-size:1.2em;
+      margin-right: 3%;
+    }
+    #footer {
+    	width: 100%;
+    }
+
+    .footer-container {
+    	width: 960px;
+    	margin: 0px auto;
+    	padding-bottom: 20px;
+    	text-align: center;
+    }
+
+    .copyright {
+    	font-family: Open Sans;
+    	font-weight: 400;
+    	font-size: 0.9;
+    	letter-spacing: 0.0625em;
+    	color: #605d5d;
+    }
+
+    .footer-icon {
+    	margin-right: 6px;
+    	margin-left: 6px;
+    }
+
+</style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="head">
+      <a class="color_change" id="name" href="/">
+        Justin Xiao
+      </a>
+      <a class="color_change" id="about" href="/">
+        About
+      </a>
+      <a class="color_change" id="projects" href="#">
+        Projects
+      </a>
+      <a class="color_change" id="music" href="/music">
+        Music
+      </a>
+      <a class="color_change" id="resume" href="/resume">
+        Resume
+      </a>
+    </div>
+
+
+    <div class="about_text">
+      <p>Some of the projects that I have worked on over the years are shown here. </p>
+      <div class="row">
+            <div class="col-md-4">
+              <div class='img-container'>
+                <div class = 'img-container2'>
+              <a href='static/thesis-6.pdf'><img src="{{url_for('static', filename='R2Rschematic.png')}}" title="nsub" class="img"></a>
+            </div>
+            </div>
+              <h4>Thesis</h4>
+            </div>
+            <div class="col-md-4">
+              <div class='img-container'>
+                <div class = 'img-container2'>
+              <a href='static/18330.pdf'><img src="{{url_for('static', filename='ising.png')}}" title="nsub" class="img"></a>
+              </div>
+              </div>
+              <h4>Ising Model Analysis</h4>
+            </div>
+            <div class="col-md-4">
+              <div class='img-container'>
+                <div class = 'img-container2'>
+            <a  href='https://icanphysics.herokuapp.com'> <img src="{{url_for('static', filename='harmony2.png')}}" title="nsub" class="img"></a>
+              </div>
+              </div>
+              <h4>Harmony (1st Place in MIT Web Dev Competition)</h4>
+            </div>
+          </div>
+    <div class="row">
+          <div class="col-md-4">
+            <div class='img-container'>
+              <div class = 'img-container2'>
+            <a href='static/6111.pdf'><img src="{{url_for('static', filename='6111.png')}}" title="nsub" class="img"></a>
+          </div>
+          </div>
+            <h4>FPGA-Cappella</h4>
+          </div>
+          <div class="col-md-4">
+            <div class='img-container'>
+              <div class = 'img-container2'>
+            <a href="static/6115.pdf"><img src="{{url_for('static', filename='6115.jpeg')}}" title="nsub" class="img"></a>
+            </div>
+            </div>
+            <h4>Microcontroller Vocal Pitch Shifter</h4>
+          </div>
+          <div class="col-md-4">
+            <div class='img-container'>
+              <div class = 'img-container2'>
+            <a href='static/301.pdf'><img src="{{url_for('static', filename='301.png')}}" title="nsub" class="img"></a>
+            </div>
+            </div>
+            <h4>Digital Thermometer</h4>
+          </div>
+        </div>
+  </div>
+
+
+
+
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/justin-xiao-25803386/" class="refs2"><i class="fa fa-linkedin-square" style="color:#3A3838; transition:color 0.5s; -webkit-transition: color 0.5s;margin-right: 5%" aria-hidden="true"></i></a>
+      <a href="https://github.com/jtxiao" class="refs2"><i class="fa fa-github" style="color:#3A3838; transition:color 0.5s; -webkit-transition: color 0.5s;margin-right: 5%" aria-hidden="true"></i></a>
+      <a href="mailto:jtxiao@mit.edu" class="refs2"><i class="fa fa-envelope-o" style="color:#3A3838; transition:color 0.5s; -webkit-transition: color 0.5s;margin-right: 5%" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+
+</body>
+<section id="footer">
+			<div class="footer-container">
+				<h5 class="copyright">Made with &#127836; by Justin Xiao</h5>
+			</div>
+		</section>
+</html>
+
+</html>
